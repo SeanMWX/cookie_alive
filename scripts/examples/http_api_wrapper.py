@@ -11,11 +11,11 @@ from urllib import parse
 
 
 def repo_root() -> Path:
-    return Path(__file__).resolve().parents[1]
+    return Path(__file__).resolve().parents[2]
 
 
 def cookie_alive_script() -> Path:
-    return repo_root() / "session_cookie_online" / "scripts" / "cookie_alive.py"
+    return repo_root() / "scripts" / "cookie_alive.py"
 
 
 def first_value(query: dict[str, list[str]], key: str, default: str | None = None) -> str | None:

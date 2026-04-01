@@ -200,7 +200,7 @@ import subprocess
 cookie_header = subprocess.check_output(
     [
         "python",
-        "session_cookie_online/scripts/cookie_alive.py",
+        "scripts/cookie_alive.py",
         "--db-name",
         "chsi",
         "pull",
@@ -217,7 +217,7 @@ cookie_header = subprocess.check_output(
 Example with the local HTTP wrapper:
 
 ```bash
-python {baseDir}/../examples/http_api_wrapper.py --host 127.0.0.1 --port 8787
+python {baseDir}/scripts/examples/http_api_wrapper.py --host 127.0.0.1 --port 8787
 curl "http://127.0.0.1:8787/pull?db_name=chsi&profile=main&refresh=1&format=header"
 curl "http://127.0.0.1:8787/check?db_name=chsi&profile=main"
 ```
